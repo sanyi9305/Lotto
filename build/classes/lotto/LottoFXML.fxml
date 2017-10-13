@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lotto.LottoFXMLController">
+    <children>
+      <Pane id="basePane" fx:id="basePane" layoutX="10.0" layoutY="10.0" prefHeight="300.0" prefWidth="400.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#77eb8e" height="300.0" stroke="BLACK" strokeType="INSIDE" width="400.0" />
+            <Button id="button1" fx:id="button1" layoutX="168.0" layoutY="261.0" onAction="#handleButtonAction" text="Sorsolás!" />
+            <Text layoutX="14.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Írj be 5 számot 1-90 között" />
+            <Text fill="#0acd17" fontSmoothingType="LCD" layoutX="156.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LOTTÓ" textAlignment="CENTER" underline="true">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Text>
+            <HBox layoutX="65.0" layoutY="91.0" spacing="20.0">
+               <children>
+                  <TextField id="input1" fx:id="input1" layoutX="11.0" layoutY="57.0" prefHeight="25.0" prefWidth="38.0" />
+                  <TextField id="input2" fx:id="input2" layoutX="60.0" layoutY="57.0" prefHeight="25.0" prefWidth="38.0" />
+                  <TextField id="input4" fx:id="input3" layoutX="106.0" layoutY="57.0" prefHeight="25.0" prefWidth="38.0" />
+                  <TextField id="input3" fx:id="input4" layoutX="155.0" layoutY="57.0" prefHeight="25.0" prefWidth="38.0" />
+                  <TextField id="input5" fx:id="input5" layoutX="207.0" layoutY="57.0" prefHeight="25.0" prefWidth="38.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="65.0" layoutY="169.0" prefHeight="17.0" prefWidth="279.0" spacing="40.0">
+               <children>
+                  <Label id="label1" fx:id="label1" layoutX="16.0" layoutY="112.0" />
+                  <Label id="label2" fx:id="label2" layoutX="65.0" layoutY="112.0" />
+                  <Label id="label3" fx:id="label3" textAlignment="CENTER" textFill="#0d0d0d" />
+                  <Label id="label4" fx:id="label4" layoutX="160.0" layoutY="112.0" />
+                  <Label id="label5" fx:id="label5" layoutX="217.0" layoutY="112.0" />
+               </children>
+            </HBox>
+            <Label id="resultLabel" fx:id="resultLabel" alignment="CENTER" layoutX="95.0" layoutY="203.0" prefHeight="17.0" prefWidth="210.0" text="Klikkelj a gombra" textFill="#f81111" />
+            <Text fill="#113ad6" fontSmoothingType="LCD" layoutX="145.0" layoutY="157.0" stroke="#8c8445" strokeType="OUTSIDE" strokeWidth="0.0" text="Sorsolt számok:" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane id="alertPane" fx:id="alertPane" prefHeight="200.0" prefWidth="200.0" visible="false" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="100.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#92c5d0" height="160.0" stroke="BLACK" strokeType="INSIDE" width="210.0" />
+            <Label id="alertText" fx:id="alertText" alignment="CENTER" contentDisplay="CENTER" layoutX="11.0" layoutY="29.0" prefHeight="61.0" prefWidth="186.0" text="asd" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Button id="alertButton" fx:id="alertButton" layoutX="80.0" layoutY="115.0" mnemonicParsing="false" onAction="#handleAlertButton" prefHeight="25.0" prefWidth="49.0" text="OK" />
+         </children>
+      </Pane>
+    </children>
+</AnchorPane>
